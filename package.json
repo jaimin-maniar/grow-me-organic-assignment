@@ -1,4 +1,5 @@
 {
+  "homepage": "https://jaimin-maniar.github.io/grow-me-organic-assignment",
   "name": "grow-me-organic-assignment",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +8,9 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.14",
